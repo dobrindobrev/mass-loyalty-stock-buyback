@@ -1,0 +1,20 @@
+skip_local_validator = true
+
+[toolchain]
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+loyalty_buyback = "H1Q7cR9NxNGR556QagHS3aDTRaDdm8MGz6ZZEh27J38a"
+mock_swap = "4oafyRYp9jTJyzgJB6XRyo3SCbuK9W1gkbhViUL5qqWj"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "cargo test"
+
+[hooks]

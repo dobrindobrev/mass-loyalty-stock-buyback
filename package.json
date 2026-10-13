@@ -1,0 +1,20 @@
+{
+  "name": "mass-loyalty-stock-buyback",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy:devnet": "bash scripts/deploy-devnet.sh",
+    "init:devnet": "tsx scripts/init-devnet.ts",
+    "simulate:devnet": "tsx scripts/simulate-purchase.ts"
+  },
+  "dependencies": {
+    "@anchor-lang/core": "^1.2.1",
+    "@solana/spl-token": "^0.4.15",
+    "@solana/web3.js": "^1.99.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}
